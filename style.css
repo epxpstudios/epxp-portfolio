@@ -1237,7 +1237,9 @@ section#vertical.vertical-section .vertical-card p {
     opacity: 1 !important;
 }
 #vertical .section-heading h2 {
-    font-weight: 800;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
 }
-
 
