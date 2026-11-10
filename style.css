@@ -1162,6 +1162,52 @@ section#vertical.vertical-section .vertical-card p {
 }
 
 
+/* HORIZONTAL SCROLL INDICATOR */
+
+.vertical-scroll-hint {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-right: 5px;
+
+    color: #777777;
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.vertical-scroll-hint .scroll-arrow {
+    display: inline-block;
+    color: #171717;
+    font-size: 25px;
+    animation: scrollArrowMove 1.2s ease-in-out infinite;
+}
+
+@keyframes scrollArrowMove {
+    0%, 100% {
+        transform: translateX(0);
+        opacity: 0.6;
+    }
+
+    50% {
+        transform: translateX(9px);
+        opacity: 1;
+    }
+}
+
+/* MOBILE ADJUSTMENT */
+
+@media (max-width: 768px) {
+    .vertical-scroll-hint {
+        font-size: 9px;
+        letter-spacing: 1.5px;
+        margin-bottom: 15px;
+    }
+}
+
+
 /* CINEMATIC HERO BACKGROUND */
 .hero {
     isolation: isolate;
