@@ -1236,6 +1236,8 @@ section#vertical.vertical-section .vertical-card p {
     visibility: visible !important;
     opacity: 1 !important;
 }
-
+#vertical .section-heading h2 {
+    font-weight: 800;
+}
 
 
