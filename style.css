@@ -1236,10 +1236,24 @@ section#vertical.vertical-section .vertical-card p {
     visibility: visible !important;
     opacity: 1 !important;
 }
+
+/* MATCH VERTICALS HEADING TO SHOW REEL */
+
 #vertical .section-heading h2 {
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    letter-spacing: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(38px, 4.5vw, 68px);
+    font-weight: 700;
+    line-height: 0.95;
+    letter-spacing: -2.5px;
+    text-transform: none;
 }
+
+@media (max-width: 768px) {
+    #vertical .section-heading h2 {
+        font-size: 50px;
+        letter-spacing: -2px;
+    }
+}
+
+
 
