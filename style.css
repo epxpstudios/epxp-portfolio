@@ -920,6 +920,7 @@ footer .logo-studios {
     color: #777777;
 }
 
+
 #vertical .vertical-grid {
     display: flex;
     gap: 30px;
@@ -929,6 +930,7 @@ footer .logo-studios {
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
 }
 
 #vertical .vertical-grid::-webkit-scrollbar {
@@ -937,8 +939,12 @@ footer .logo-studios {
 
 #vertical .vertical-card {
     flex: 0 0 calc((100% - 60px) / 3);
+    min-width: 0;
     scroll-snap-align: start;
+    display: block;
 }
+
+
 
 #vertical .vertical-thumbnail {
     position: relative;
@@ -1159,6 +1165,17 @@ section#vertical.vertical-section .vertical-card p {
             rgba(0, 0, 0, 0.76)
         ),
         url("images/hero-studio.jpeg") center 55% / cover no-repeat;
+}
+/* TEMPORARY TEST — SHOW ALL VERTICAL CARDS */
+
+#vertical .vertical-grid {
+    overflow-x: auto !important;
+}
+
+#vertical .vertical-card {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
 
